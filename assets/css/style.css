@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(77, 71, 49);
+  color: white;
+}
+
+.container{
+  width: 550px;
+  height: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.container h1{
+  margin: 35px;
+}
+
+.container ul{
+  list-style: none;
+  margin: 25px;
+}
+
+.container ul li{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;  
+  margin: 15px;
+  border-bottom: 1px solid white;
+}
+
+.container ul li:last-child{
+  border: none;
+}
