@@ -10,7 +10,6 @@ $(function(){
 
   for(var i = 0; i < arrThings.length; i++){
     var strThings = arrThings[i];
-    console.log(strThings);
 
     /* uso clone per clonare il template e poi con append aggiungo alla classe text l'elemento dell'array */
     var item = $('.template li').clone();
@@ -25,13 +24,15 @@ $(function(){
   });
 
   /* intercetto l'input e lo aggiungo nell'elenco e ripulisco l'input */
-  $('. container input').keyup(function(event){
+  $('.container input').keyup(function(event){
   
     if(event.which === 13){
 
       var item = $('.template li').clone();
       $(item).find('.text').append($(this).val());
       $('.container ul').append(item);
+      /* per ripulire l'input */
+      $(this).val("");
 
     }
 
