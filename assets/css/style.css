@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body{
@@ -20,9 +21,29 @@ body{
   margin: 35px;
 }
 
+.container input{
+  width: 90%;
+  border: none;
+  outline: 0;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 5px 5px black;
+}
+
+.container input:hover{
+  background-color: white;
+}
+
+.container input:active{
+  scale: 1.02;
+}
+
 .container ul{
   list-style: none;
-  margin: 25px;
+  margin-top: 25px;
+  font-size: 18px;
 }
 
 .container ul li{
@@ -35,6 +56,16 @@ body{
 
 .container ul li:last-child{
   border: none;
+}
+
+.container ul li i{
+  color: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+}
+
+.container ul li i:hover{
+  color: white;
+  scale: 1.1;
 }
 
 .template{

@@ -9,6 +9,7 @@ $(function(){
   ];
 
   for(var i = 0; i < arrThings.length; i++){
+
     var strThings = arrThings[i];
 
     /* uso clone per clonare il template e poi con append aggiungo alla classe text l'elemento dell'array */
@@ -16,11 +17,13 @@ $(function(){
     $(item).find('.text').append(strThings);
     $('.container ul').append(item);
 
-  }
+  };
 
   /* click su cestino per eliminare elemento della lista */
-  $(document).on('click', '.fas', function(){
+  $(document).on('click', '.fa-trash-alt', function(){
+
     $(this).parent().remove();
+
   });
 
   /* intercetto l'input e lo aggiungo nell'elenco e ripulisco l'input */
